@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "forms_progress.css">
+    </head>
+
+    <body>
+        <!-- label for the header -->
+        <div class = "forms">
+            <div class= "main-header">
+                <div class = "vacation-text-wrapper"> Vacation forms </div>
+            </div>
+
+
+            <!-- PERSONAL INFORMATION -->
+            <div class = "survey-1">
+                <div class = "personal-information"> Personal Information </div>
+
+                <!-- FIRST NAME -->
+                <label for="firstname" class="form-label-1"> </label>
+                <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First Name"
+                class="form-input-1"
+                />
+
+                <!-- LAST NAME -->
+                <label for="lastname" class="form-label-2"> </label>
+                <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last Name"
+                class="form-input-2"
+                />
+
+                <!-- AGE -->
+                <label for="age" class="form-label-3"> </label>
+                <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="Age"
+                class="form-input-3"
+                />
+
+                <!-- SEX -->
+                <label for="sex" class="form-label-4"></label>
+                <select name="sex" id="sex" class="form-input-4">
+                    <option value="" disabled selected>Select Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+            </div>
+
+            <!-- ADDRESS INFORMATION -->
+            <div class = "survey-2">
+                <div class = "address"> Address </div>
+
+                <!-- BLOCK AND LOT -->
+                <label for="blk-lot" class="form-label-5"> </label>
+                <input
+                type="text"
+                name="blk-lot"
+                id="blk-lot"
+                placeholder="Block Lot no."
+                class="form-input-5"
+                />
+
+                <!-- STREET NAME -->
+                <label for="street" class="form-label-6"> </label>
+                <input
+                type="text"
+                name="street"
+                id="street"
+                placeholder="Street name"
+                class="form-input-6"
+                />
+
+                <!-- SUBDIVISION -->
+                <label for="subdivision" class="form-label-7"> </label>
+                <input
+                type="text"
+                name="subdivision"
+                id="subdivision"
+                placeholder="Subdivision"
+                class="form-input-7"
+                />
+
+                <!-- BARANGAY -->
+                <label for="barangay" class="form-label-8"> </label>
+                <input
+                type="text"
+                name="barangay"
+                id="barangay"
+                placeholder="Barangay"
+                class="form-input-8"
+                />
+
+                <!-- CITY/MUNICIPALITY -->
+                <label for="city-municipality" class="form-label-9"> </label>
+                <input
+                type="text"
+                name="city-municipality"
+                id="city-municipality"
+                placeholder="City/Municipality"
+                class="form-input-9"
+                />
+
+                <!-- PROVINCE -->
+                <label for="province" class="form-label-10"> </label>
+                <input
+                type="text"
+                name="province"
+                id="province"
+                placeholder="Province"
+                class="form-input-10"
+                />
+
+                <!-- COUNTRY -->
+                <label for="country" class="form-label-11"> </label>
+                <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="Country"
+                class="form-input-11"
+                />
+            </div>
+
+             <!-- FAVORITE PLACES TO GO -->
+             <div class = "survey-3">
+                <div class = "favorite"> Favorite places to go </div>
+
+                <!-- CHECKLIST OF PLACES -->
+                <label for="favplaces" class = "form-label-12"> </label> 
+                    <input type="checkbox" class = "form-label-12" name="Bohol" value="Bohol"> Bohol
+                    <input type="checkbox" class = "form-label-12" name="Boracay" value="Boracay"> Boracay 
+                    <input type="checkbox" class = "form-label-12" name="Baguio" value="Baguio"> Baguio 
+                    <input type="checkbox" class = "form-label-12" name="Tagaytay" value="Tagaytay"> Tagaytay
+                    <input type="checkbox" class = "form-label-12" name="QMC" value="QMC"> QMC 
+                    
+                    <!-- TEXT BEFORE THE SUBMIT BUTTON -->
+                    <div class = "reminder">
+                        <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+                    </div>
+
+                    <button class="formbold-btn">
+                        Submit
+                      </button>
+        </div>
+
+
+        <!-- container part of the project // base -->
+        <div class = "box"> <div class = "rectangle"> </div>  </div>
+
+        <!-- codes for the slide pictures part // slideshow -->
+        <section class = "container">
+            <div class = "slider-wrapper">
+
+                <!-- images -->
+                <div class = "slider">
+                    <img id = "Bohol" src= "bohol-1.jpg" alt="picture of bohol"/>
+                    <img id = "Boracay" src="boracay-1.jpg" alt="picture of boracay"/>
+                    <img id = "Baguio" src= "baguio-1.jpg" alt="picture of baguio"/>
+                    <img id = "Tagaytay" src="tagaytay-1.jpg" alt="picture of tagaytay"/>
+                    <img id = "Quezon-City-Memorial" src= "qmc-1.jpg" alt="picture of qmc"/>
+                </div>
+
+                <!-- next idea: insert label of each photo -->
+                <div class="slider-nav">
+                    <a href="#Bohol"></a>
+                    <a href="#Boracay"></a>
+                    <a href="#Baguio"></a>
+                    <a href="#Tagaytay"></a>
+                    <a href="#Quezon-City-Memorial"></a>
+                </div>
+            </div>
+        </section>
+
+       
+    </body>
+</html>

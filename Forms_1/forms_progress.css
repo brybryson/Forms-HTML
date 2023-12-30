@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ----------------------------- CONTAINER OF ALL // BASE ---------------------------------- */
+.box {
+    background-color: #ffffff;
+    margin: 0px 0 30px 0px;
+    position: fixed;
+    width: 931px;
+    height: 563px;
+    overflow: hidden; /* Prevent content from extending beyond the specified height */
+    
+}
+
+.box .rectangle {
+    position: fixed;
+    width: 931px;
+    height: 563px;
+    margin-top: 35px;
+    margin-left: 130px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 50px 1px #00000033;
+    z-index: 1;    /*  Set a lower z-index  */
+}
+
+
+
+/* ----------------------------- PICTURE SLIDESHOW --------------------------------- */
+.container {
+    position: fixed;
+    width: 366px;
+    height: 563px;
+    margin: 35px auto 0 130.5px;
+    overflow: hidden;
+    z-index: 1; /* Set a higher z-index */
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem 0 0 0.5rem;
+    position: relative;
+}
+
+.slider img {
+    width: 366px;
+    height: 563px;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Set a higher z-index */
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem ;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.5);
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+
+/* --------------------------- HEADER PART - VACATION FORMS ------------------------ */
+
+body {
+    font-family: "Inter", sans-serif;
+  }
+  
+/* ------------ VACATION FORMS -------------- */
+
+.main-header {
+    width: 480px;
+    height: 41px;
+    position: fixed;
+    top: 65px; /* Adjust the top position */
+    left: 540px; /* Adjust the left position */
+    z-index: 2; /* Set a higher z-index to ensure it's above the container and slider */
+  }
+  
+.main-header .vacation-text-wrapper {
+    width: 480px;
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    left: 0;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 38px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  /* -------- PLANNING FOR VACATION -------- */
+
+/* .sub-header {
+    width: 480px;
+    height: 41px;
+    position: fixed;
+    top: 108px; 
+    left: 545px; 
+    z-index: 2; 
+  }
+
+.sub-header .planning-text-wrapper {
+    width: 480px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500px;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  } */
+
+
+/* ------------------ PERSONAL INFORMATION --------------------------- */
+
+.survey-1 {
+    width: 480px;
+    height: 41px;
+    position: fixed;
+    top: 115px; /* Adjust the top position */
+    left: 545px; /* Adjust the left position */
+    z-index: 2; /* Set a higher z-index to ensure it's above the container and slider */
+  }
+
+.survey-1 .personal-information {
+    width: 480px;
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600px;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  /* ---------------------- FIRST NAME / LAST NAME / AGE / SEX ----------------------- */
+  .form-input-1 {
+    width: 200px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 30px 1px 0 0; /* Adjust this margin to your preference */
+    display: inline-block; /* Display as inline-block */
+}
+
+.form-input-2 {
+    width: 200px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 100 -10px 0 250px; /* Adjust this margin to your preference */
+    display: inline-block; /* Display as inline-block */
+}
+.form-input-3 {
+    width: 40px;
+    height: 25px; /* Adjusted height to match with form-input-4 */
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 5px 0 0 0; /* Adjust this margin to your preference */
+    display: inline-block; /* Display as inline-block */
+}
+
+.form-input-4 {
+    width: 140px; /* Adjust the width based on your preference */
+    height: 37px;
+    padding: 5px 9px; /* Adjusted padding for consistency */
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: -5px -10px 0 1px; /* Adjust this margin to your preference */
+    display: inline-block;
+}
+
+
+/* ------------ FOR THE FORM-INPUT-4 (SEX) --------------- */
+
+/* Styling for the dropdown arrow */
+.form-input-4::after {
+    content: '\25BC'; 
+    position: absolute;
+    top: 50%;
+    right: 0px; 
+    transform: translateY(-50%);
+}
+
+/* Remove default styles for the dropdown arrow in some browsers */
+.form-input-4::-ms-expand {
+    display: none;
+}
+
+/* Styling for the placeholder text */
+.form-input-4 option[disabled] {
+    color: #536387;
+}
+
+/* Styling for the selected option */
+.form-input-4:focus,
+.form-input-4:hover {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ------------------ ADDRESS INFORMATION --------------------------- */
+
+.survey-2 {
+    width: 500px;
+    height: 80px;
+    position: fixed;
+    top: 240px; /* Adjust the top position */
+    left: 545px; /* Adjust the left position */
+    z-index: 1; /* Set a higher z-index to ensure it's above the container and slider */
+  }
+
+.survey-2 .address {
+    width: 480px;
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600px;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  /* ---------------------- BLOCK LOT NO / STREET NAME / PROVINCE / COUNTRY / BARANGAY / CITY / SUBDIVISION ----------------------- */
+  .form-input-5 {
+    width: 215px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 30px 1px 0 0; 
+    display: inline-block; 
+}
+
+.form-input-6 {
+    width: 205px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 100 -10px -10px 240px; 
+    display: inline-block; 
+}
+
+.form-input-7 {
+    width: 250px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: 5px -10px 0 0; 
+    display: inline-block; 
+}
+
+.form-input-8 {
+    width: 170px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: -5px 0 10px 10px; 
+    display: inline-block; 
+}
+
+.form-input-9 {
+    width: 220px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: -5px 0 5px 0; 
+    display: inline-block; 
+}
+
+.form-input-10 {
+    width: 200px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: -5px 0 10px 0; 
+    display: inline-block; 
+}
+
+.form-input-11 {
+    width: 180px;
+    height: 25px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #DDE3EC;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    z-index: 1;
+    text-indent: 1px;
+    margin: -5px 0 10px 0; 
+    display: inline-block; 
+}
+
+/* ---------------------- LAST PART OF THE SURVEY / FAVORITE PLACES TO GO ------------------------- */
+
+.survey-3 {
+    width: 500px;
+    height: 80px;
+    position: fixed;
+    top: 450px; /* Adjust the top position */
+    left: 545px; /* Adjust the left position */
+    z-index: 1; /* Set a higher z-index to ensure it's above the container and slider */
+  }
+
+.survey-3 .favorite {
+    width: 480px;
+    position: absolute; /* Change to absolute positioning */
+    top: 0;
+    left: 0;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600px;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: normal;
+
+  }
+
+  /* ---------------------- BORACAY / BOHOL / QMC / BAGUIO / TAGAYTAY ----------------------- */
+
+.form-input-12 {
+    width: 215px;
+    height: 25px;
+    margin-top: 30px; /* Adjust as needed to move it downward */
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    border: 1.5px solid #536387;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    color: #6a64f1;
+    outline: 3px;
+}
+
+/* Additional styles for checkboxes */
+input[type="checkbox"] {
+    font-family: "Inter", sans-serif;
+    margin: 30px 0 0 5px; /* Adjust as needed to provide margin between checkboxes */
+
+}
+
+/* Apply .form-input-12 styles to checkboxes */
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 1.5px solid #536387;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 10px;
+    color: #07074D;
+    outline: 3px;
+    resize: none;
+    text-indent: 1px;
+}
+
+/* ----------------- TEXT BEFORE THE SUBMIT BUTTON ----------------- */
+.reminder {
+font-size: 10px;
+}
+
+/* ---------------------- SUBMIT BUTTON ---------------------- */
+.formbold-btn {
+    text-align: center;
+    height: 40px;
+    width: 465px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6A64F1;
+    color: white;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+/* ------ OTHER CODE FOR THE SURVEY PART ------ */
+
+.form-input-1::placeholder,
+.form-input-2::placeholder,
+.form-input-3::placeholder,
+.form-input-4::placeholder,
+.form-input-5::placeholder,
+.form-input-6::placeholder,
+.form-input-7::placeholder,
+.form-input-8::placeholder,
+.form-input-9::placeholder,
+.form-input-10::placeholder,
+.form-input-11::placeholder,
+.form-input-12::placeholder   {
+    color: #536387;
+}
+
+.form-input-1:focus,
+.form-input-2:focus,
+.form-input-3:focus,
+.form-input-4:focus,
+.form-input-5:focus,
+.form-input-6:focus,
+.form-input-7:focus,
+.form-input-8:focus,
+.form-input-9:focus,
+.form-input-10:focus,
+.form-input-11:focus,
+.form-input-11:focus   {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
